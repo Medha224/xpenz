@@ -1,0 +1,23 @@
+.budget-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.budget-card { padding: 20px; }
+.budget-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.budget-cat   { display:flex; align-items:center; gap:8px; font-weight:500; }
+.budget-pct   { font-size:12px; padding:3px 10px; border-radius:20px; }
+.budget-amounts {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.prog-bar  { height:8px; background:var(--bg3); border-radius:4px; overflow:hidden; }
+.prog-fill { height:100%; border-radius:4px; transition:width .5s; }
